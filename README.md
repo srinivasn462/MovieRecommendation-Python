@@ -30,7 +30,7 @@ def recommend(user_id, top_n=10):
     recommendations = user_item_matrix.iloc[similar_users].mean(axis=0)
     return recommendations.sort_values(ascending=False).head(top_n)
 
-#Content-Based Filtering:
+# Content-based Filtering
 Code Example:
 
 import pandas as pd
